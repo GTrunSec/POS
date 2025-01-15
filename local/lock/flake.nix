@@ -108,7 +108,6 @@
     nickel.inputs.flake-utils.follows = "flake-utils";
     # nickel.inputs.pre-commit-hooks.follows = "";
     # nickel.follows = "organist/nickel";
-    nickel.inputs.topiary.follows = "topiary";
 
     nil.url = "github:oxalica/nil";
     nil.inputs.nixpkgs.follows = "nixpkgs";

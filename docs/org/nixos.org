@@ -1,0 +1,11 @@
+#+TITLE: nixos
+#+AUTHOR: GuangTao Zhang
+#+EMAIL: gtrunsec@hardenedlinux.org
+#+DATE: 2024-12-03 Tue 18:01
+
+
+
+
+* community
+
+** [[https://github.com/Athena-OS][Athena OS]]

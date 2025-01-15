@@ -3,7 +3,13 @@
 #
 # SPDX-License-Identifier: MIT
 
-{ pkgs, lib, ... }:
+{
+  pkgs,
+  lib,
+  config,
+  omnibus,
+  ...
+}:
 let
   cfg = config.omnibus.coding.python;
   pythonEnv = (
@@ -26,6 +32,7 @@ let
             markdown
             feedparser
             retrying
+            distutils
           ]
         )
         ++ (lib.optionals cfg.enableLspBridge [
@@ -37,8 +44,9 @@ let
           six
           paramiko
           rapidfuzz
+          watchdog
         ])
-        ++ [ ]
+        ++ (cfg.extraPackages ps)
       )
     )
   );
